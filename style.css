@@ -3,12 +3,13 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
 }
 
 html {
   font-size: clamp(13px, calc(1.5vw + 2px), 15px);
   font-family: "Poppins", system-ui, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: hsl(212, 6%, 44%);
 }
 
@@ -23,37 +24,38 @@ body {
   padding: 3rem 1rem;
 }
 
-section,
+.intro,
 div {
   display: flex;
   flex-flow: column;
-  gap: 1.5rem;
 }
 
 .intro {
-  width: clamp(24rem, 100%, 30rem);
+  width: clamp(25.5rem, 100%, 31rem);
   text-align: center;
+  gap: 1.5rem;
 }
 
 .intro h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 400;
   align-self: center;
 }
 
 .intro span {
   color: hsl(234, 12%, 34%);
-  font-weight: 800;
+  font-weight: 600;
+  font-size: 2.1rem;
 }
 
 .grid-container {
   display: grid;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
-.flex-container {
-  align-items: center;
+.flex {
+  gap: 2rem;
 }
 
 .card .decor-line {
@@ -79,24 +81,23 @@ div {
 
 .card {
   position: relative;
-  width: clamp(16rem, 80vw, 22rem);
+  width: clamp(18rem, calc(99vw + 3.2px), 23rem);
   border-radius: 0.5rem;
   overflow: hidden;
-  height: 15rem;
-  gap: unset;
+  height: 17rem;
   padding: 2rem;
+  align-self: center;
   box-shadow: 0 0.7rem 0.7rem hsl(218, 36%, 96%);
 }
 
 .card > img:last-child {
   position: absolute;
   right: 1.5rem;
-  bottom: 1.5rem;
+  bottom: 3rem;
 }
 
 .card h3 {
   color: hsl(234, 12%, 34%);
-  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
