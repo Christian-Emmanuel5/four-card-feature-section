@@ -19,9 +19,9 @@ body {
   flex-flow: column;
   align-items: center;
   gap: 3rem;
-  background: hsl(0, 0%, 100%);
+  background: hsl(0, 0%, 99%);
   width: 100vw;
-  padding: 3rem 1rem;
+  padding: 8% 1rem;
 }
 
 .intro,
@@ -31,13 +31,13 @@ div {
 }
 
 .intro {
-  width: clamp(25.5rem, 100%, 31rem);
+  width: clamp(25.5rem, 100%, 36rem);
   text-align: center;
   gap: 1.5rem;
 }
 
 .intro h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 400;
   align-self: center;
 }
@@ -45,7 +45,6 @@ div {
 .intro span {
   color: hsl(234, 12%, 34%);
   font-weight: 600;
-  font-size: 2.1rem;
 }
 
 .grid-container {
@@ -59,7 +58,7 @@ div {
 }
 
 .card .decor-line {
-  height: 0.2rem;
+  height: 0.3rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -87,7 +86,8 @@ div {
   height: 17rem;
   padding: 2rem;
   align-self: center;
-  box-shadow: 0 0.7rem 0.7rem hsl(218, 36%, 96%);
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0 0.8rem 0.7rem hsl(214, 47%, 94%);
 }
 
 .card > img:last-child {
