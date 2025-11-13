@@ -3,37 +3,49 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
 }
 
 html {
-  font-family: "poppins";
-  font-weight: 300;
-  font-size: clamp(11px, calc(1.8vw + 4px), 15px);
+  font-size: clamp(13px, calc(1.5vw + 2px), 15px);
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 500;
   color: hsl(212, 6%, 44%);
-  line-height: 1.2;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 8%;
   gap: 3rem;
+  background: hsl(0, 0%, 100%);
+  width: 100vw;
+  padding: 3rem 1rem;
 }
 
-section,
+.intro,
 div {
   display: flex;
   flex-flow: column;
 }
 
 .intro {
-  min-width: 23rem;
-  max-width: 26rem;
+  width: clamp(25.5rem, 100%, 31rem);
   text-align: center;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  align-self: center;
+}
+
+.intro span {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  font-size: 2.1rem;
 }
 
 .intro h2 {
@@ -55,49 +67,75 @@ h3 {
 
 .grid-container {
   display: grid;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 2rem;
 }
 
-.flex-container {
-  gap: 1.5rem;
+.flex {
+  gap: 2rem;
 }
 
-.card .deco-line {
-  background: red;
+.card .decor-line {
   height: 0.3rem;
-  width: 100%;
   position: absolute;
   top: 0;
   right: 0;
+  width: 100%;
+}
+
+.card .first {
+  background: hsl(180, 62%, 55%);
+}
+.card .second {
+  background: hsl(0, 78%, 62%);
+}
+.card .third {
+  background: hsl(34, 97%, 64%);
+}
+.card .fourth {
+  background: hsl(212, 86%, 64%);
 }
 
 .card {
   position: relative;
-  min-width: 18rem;
-  max-width: 20rem;
-  height: 14rem;
-  box-shadow: 0 0.7rem 0.7rem hsl(216, 38%, 95%);
-  padding: 1.5rem;
+  width: clamp(18rem, calc(99vw + 3.2px), 23rem);
   border-radius: 0.5rem;
   overflow: hidden;
+  height: 17rem;
+  padding: 2rem;
+  align-self: center;
+  box-shadow: 0 0.7rem 0.7rem hsl(218, 36%, 96%);
 }
 
 .card > img:last-child {
-  width: 3rem;
   position: absolute;
   right: 1.5rem;
   bottom: 3rem;
 }
 
+.card h3 {
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0.5rem;
+}
+
 .attribution {
-  margin-block-end: 1rem;
+  position: fixed;
+  background-color: hsl(218, 36%, 96%);
   font-size: 0.8rem;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 640px) {
   .grid-container {
+    display: grid;
     grid-template: 1fr / repeat(3, 1fr);
-    align-items: center;
-    transition: all 3s ease-in;
+    transition: all 3s ease;
   }
 }
