@@ -7,9 +7,9 @@
 }
 
 html {
-  font-size: clamp(13px, calc(1.5vw + 2px), 15px);
+  font-size: clamp(12px, calc(3vw + 2px), 15px);
   font-family: "Poppins", system-ui, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: hsl(212, 6%, 44%);
 }
 
@@ -18,8 +18,8 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
-  gap: 3rem;
-  background: hsl(0, 0%, 99%);
+  gap: 4rem;
+  background: hsl(0, 5%, 99%);
   width: 100vw;
   padding: 8% 1rem;
 }
@@ -37,7 +37,7 @@ div {
 }
 
 .intro h2 {
-  font-size: 2.3rem;
+  font-size: clamp(1.5rem, calc(3.5vw + 10px), 2.3rem);
   font-weight: 400;
   align-self: center;
 }
@@ -83,11 +83,12 @@ div {
   width: clamp(18rem, calc(99vw + 3.2px), 23rem);
   border-radius: 0.5rem;
   overflow: hidden;
-  height: 17rem;
-  padding: 2rem;
+  font-size: 0.9rem;
+  height: 16rem;
+  padding: 2rem 3rem 0 2rem;
   align-self: center;
   background: hsl(0, 0%, 100%);
-  box-shadow: 0 0.8rem 0.7rem hsl(214, 47%, 94%);
+  box-shadow: 0 0.8rem 0.7rem hsl(214, 50%, 94%);
 }
 
 .card > img:last-child {
@@ -97,8 +98,8 @@ div {
 }
 
 .card h3 {
-  color: hsl(234, 12%, 34%);
   margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .attribution {
@@ -119,6 +120,5 @@ div {
   .grid-container {
     display: grid;
     grid-template: 1fr / repeat(3, 1fr);
-    transition: all 3s ease;
   }
 }
