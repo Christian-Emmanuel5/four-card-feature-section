@@ -33,12 +33,12 @@ div {
 .intro {
   width: clamp(25.5rem, 100%, 36rem);
   text-align: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .intro h2 {
   font-size: clamp(1.5rem, calc(3.5vw + 10px), 2.3rem);
-  font-weight: 400;
+  font-weight: 300;
   align-self: center;
 }
 
