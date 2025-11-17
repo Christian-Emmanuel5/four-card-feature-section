@@ -92,6 +92,7 @@ div {
 }
 
 .card > img:last-child {
+  width: 15%;
   position: absolute;
   right: 2rem;
   bottom: 3rem;
